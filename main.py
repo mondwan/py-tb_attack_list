@@ -13,6 +13,7 @@
 import sys
 import utils.parser
 import utils.auxiliary as auxiliary
+import filter.filter_factory as filter_factory
 import math
 
 class ShowHelpException(Exception):
@@ -63,6 +64,11 @@ def pump(commands, cfg):
     - `array of command object`
     """
 
+    myFilter = filter_factory.createFilter(cfg)
+
+    # It means we should not do filtering if myFilter is None
+    if myFilter is not None:
+        commands = myFilter.filter(commands)
 
     # Sort at last step if required
     isSortRequired = cfg.getboolean('instruction', 'sort')
@@ -122,9 +128,6 @@ def main(argv):
     except ShowHelpException:
         parser.print_help()
         ret = 0
-    except Exception, e:
-        print(e)
-        ret = 1
 
     return ret
     
