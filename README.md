@@ -30,12 +30,12 @@ targets which attacked by certain type of troops
 
 NOTE1: Each of the combination of troops is treated as one special type
 
-* By error contents
+* By error
 
 Targets with errors like getting locked will be deleted
 
-Above algorithms can be work alone or working together which give you more
-powers on filtering.
+Above algorithms can be working in either chain or composition mode which give
+you more powers on filtering.
 
 @author: Mond Wan
 
