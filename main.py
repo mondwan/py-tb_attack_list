@@ -15,6 +15,7 @@ import utils.parser
 import utils.auxiliary as auxiliary
 import filter.filter_factory as filter_factory
 import math
+from filter.base_filter import FilterException
 
 class ShowHelpException(Exception):
     """
@@ -128,6 +129,10 @@ def main(argv):
     except ShowHelpException:
         parser.print_help()
         ret = 0
+    except FilterException, e:
+        ret = 1
+        print('ERROR')
+        print(e)
 
     return ret
     

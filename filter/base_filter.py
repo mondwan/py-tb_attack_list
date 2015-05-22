@@ -10,6 +10,13 @@
 - `Description`: Define interfaces for a filter
 """
 
+class FilterException(Exception):
+    """
+    Raise if there are any exception from filter operation
+    """
+    pass
+
+
 class BaseFilter(object):
     """
     A base filter do nothing but defines interfaces for filter object

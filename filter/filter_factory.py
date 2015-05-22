@@ -30,7 +30,8 @@ def createFilter(cfg):
         },
         {
             'name': 'by_troop_type',
-            'module': 'none'
+            'module': 'troop_type_filter',
+            'class': 'TroopTypeFilter',
         },
         {
             'name': 'by_error',
