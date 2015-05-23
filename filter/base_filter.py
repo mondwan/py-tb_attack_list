@@ -53,7 +53,7 @@ class BaseFilter(object):
 
         - `f`: Instance of a filter object
         """
-        self._filter.append(f)
+        self._filters.append(f)
 
     def filter(self, commands):
         """
