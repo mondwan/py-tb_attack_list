@@ -1,5 +1,7 @@
 # About
 
+@author: Mond Wan
+
 This is a project for manipulating attack list from tb (travian builder).
 
 At first, repository [py-sort_attack_list][1] covers sorting feature I need.
@@ -34,9 +36,5 @@ NOTE1: Each of the combination of troops is treated as one special type
 
 Targets with errors like getting locked will be deleted
 
-Above algorithms can be working in either chain or composition mode which give
-you more powers on filtering.
-
-@author: Mond Wan
-
 [1]: https://github.com/mondwan/py-sort_attack_list
+
