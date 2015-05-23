@@ -40,7 +40,8 @@ def createFilter(cfg):
         },
         {
             'name': 'by_error',
-            'module': 'none'
+            'module': 'error_filter',
+            'class': 'ErrorFilter'
         },
     ]
 
