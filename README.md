@@ -32,6 +32,10 @@ targets which attacked by certain type of troops
 
 NOTE1: Each of the combination of troops is treated as one special type
 
+* By troop's type and position
+
+Mixed version with above 2 filtering algorithms
+
 * By error
 
 Targets with errors like getting locked will be deleted
