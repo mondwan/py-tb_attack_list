@@ -34,6 +34,11 @@ def createFilter(cfg):
             'class': 'TroopTypeFilter',
         },
         {
+            'name': 'by_type_position',
+            'module': 'type_position_filter',
+            'class': 'TypePositionFilter'
+        },
+        {
             'name': 'by_error',
             'module': 'none'
         },
